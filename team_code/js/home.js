@@ -55,5 +55,14 @@ window.addEventListener("scroll", () => {
 
 
 //COMMIT 3 START: 
-
+// Interactive Hero Button Bounce Effect
+const heroBtn = document.querySelector(".btn-primary");
+if (heroBtn) {
+  heroBtn.addEventListener("mouseenter", () => {
+    heroBtn.style.transform = "translateY(-4px) scale(1.02)";
+  });
+  heroBtn.addEventListener("mouseleave", () => {
+    heroBtn.style.transform = "translateY(0) scale(1)";
+  });
+}
 //COMMIT 3 END: 
